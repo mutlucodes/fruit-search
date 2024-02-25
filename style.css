@@ -1,0 +1,54 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+:focus {
+ /* TODO */
+}
+
+body {
+  /* TODO */
+}
+
+input {
+ /* TODO */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #fee14b, #FF6600);
+  width: 100%;
+}
+.search-container input,
+.search-container .suggestions {
+  padding: 10px;
+  font-size: 16px;
+}
+.search-container input {
+  background-color: rgba(255, 237, 78, 0.35);
+  border: 1px solid #ffa500;
+  color: #000
+}
+.search-container .suggestions {
+   /* TODO */
+}
+
+ul {
+  /* TODO */
+}
+ul.has-suggestions {
+  /* TODO */
+}
+ul li {
+  /* TODO */
+}
+ul li:hover {
+  /* TODO */
+}
+
+input {
+   /* TODO */
+}
