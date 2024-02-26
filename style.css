@@ -1,54 +1,78 @@
-* {
-  /* box-sizing: border-box; */
-}
-
-:focus {
- /* TODO */
+html,  body {
+  height: 100%;
+  margin: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-image: linear-gradient(to right, #fee14b, #FF6600);
 }
 
 body {
-  /* TODO */
+  background-image: linear-gradient(to right, #fee14b, #FF6600);
 }
 
 input {
- /* TODO */
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px 4px 0 0; 
+  border: none; 
 }
 
 .search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #fee14b, #FF6600);
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 20%;
 }
+
 .search-container input,
 .search-container .suggestions {
   padding: 10px;
   font-size: 16px;
 }
+
 .search-container input {
+  width: calc(100% - 20px);
   background-color: rgba(255, 237, 78, 0.35);
-  border: 1px solid #ffa500;
+  
   color: #000
 }
-.search-container .suggestions {
-   /* TODO */
+
+.suggestions {
+  display: none;
+  position: absolute;
+  width: calc(100% - 20px);
+  background-color: rgba(255, 237, 78, 0.35); 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 0 0 4px 4px; 
+  top: 100%;
+  left: 0;
 }
 
 ul {
-  /* TODO */
-}
-ul.has-suggestions {
-  /* TODO */
-}
-ul li {
-  /* TODO */
-}
-ul li:hover {
-  /* TODO */
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
 }
 
-input {
-   /* TODO */
+ul.has-suggestions {
+  display: block; 
+}
+
+ul li {
+  padding: 10px;
+  cursor: pointer; 
+  border-bottom: 1px solid #5b5728; 
+}
+
+ul li:hover {
+  background-color: #5b5728;
+}
+
+input:focus {
+  outline: none;
+  outline:1px solid rgb(181, 121, 30);
 }
